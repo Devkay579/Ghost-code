@@ -5,6 +5,7 @@ import { playSound, preloadSounds } from './services/sound';
 import Navbar from './components/layout/Navbar';
 import Home from './pages/Home';
 import Game from './pages/Game';
+import Play from './pages/Play';
 import Leaderboard from './pages/Leaderboard';
 import Profile from './pages/Profile';
 import Login from './components/auth/Login';
@@ -51,6 +52,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route
+            path="/play"
+            element={
+              <ProtectedRoute>
+                <Play />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/game"
             element={

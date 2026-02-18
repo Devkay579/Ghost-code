@@ -22,6 +22,8 @@ body {
   content: attr(data-text);
   position: absolute;
   left: 0;
+  width: 100%;
+  text-align: inherit;
 }
 .glitch:before {
   animation: glitchTop 1s infinite;

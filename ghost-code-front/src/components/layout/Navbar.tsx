@@ -59,7 +59,7 @@ const Navbar = () => {
           <motion.div whileHover={linkHover}><Link to="/">Home</Link></motion.div>
           {isAuthenticated ? (
             <>
-              <motion.div whileHover={linkHover}><Link to="/game">Play</Link></motion.div>
+              <motion.div whileHover={linkHover}><Link to="/play">Play</Link></motion.div>
               <motion.div whileHover={linkHover}><Link to="/leaderboard">Leaderboard</Link></motion.div>
               <motion.div whileHover={linkHover}><Link to="/profile">Profile</Link></motion.div>
               {user?.isAdmin && <motion.div whileHover={linkHover}><Link to="/admin">Admin</Link></motion.div>}
@@ -87,7 +87,7 @@ const Navbar = () => {
             <motion.div whileHover={linkHover}><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></motion.div>
             {isAuthenticated ? (
               <>
-                <motion.div whileHover={linkHover}><Link to="/game" onClick={() => setIsOpen(false)}>Play</Link></motion.div>
+                <motion.div whileHover={linkHover}><Link to="/play" onClick={() => setIsOpen(false)}>Play</Link></motion.div>
                 <motion.div whileHover={linkHover}><Link to="/leaderboard" onClick={() => setIsOpen(false)}>Leaderboard</Link></motion.div>
                 <motion.div whileHover={linkHover}><Link to="/profile" onClick={() => setIsOpen(false)}>Profile</Link></motion.div>
                 {user?.isAdmin && <motion.div whileHover={linkHover}><Link to="/admin" onClick={() => setIsOpen(false)}>Admin</Link></motion.div>}

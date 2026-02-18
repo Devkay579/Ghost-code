@@ -3,13 +3,15 @@ import MathInterference from './MiniGames/MathInterference';
 import PatternMatch from './MiniGames/PatternMatch';
 import GlitchFlash from './MiniGames/GlitchFlash';
 import ReactionTime from './MiniGames/ReactionTime';
+import ReverseTyping from './MiniGames/ReverseTyping';
 
 // Add new mini-games here and they automatically become part of the engine
 const distractions = [
   { id: 'math', component: MathInterference },
   { id: 'pattern', component: PatternMatch },
   { id: 'glitch', component: GlitchFlash },
-  { id: 'reaction', component: ReactionTime }, // Lazy load this one
+  { id: 'reaction', component: ReactionTime }, 
+  { id: 'reverse', component: ReverseTyping },
 ];
 
 interface Props {
