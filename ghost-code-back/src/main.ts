@@ -5,9 +5,10 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.enableCors({
-    origin: 'http://localhost:5174', // your Vite frontend
-    credentials: true,
-  });
+  origin: true, // allows all origins safely for APIs
+  credentials: true,
+});
+
 
   await app.listen(process.env.PORT ?? 3000);
 }
